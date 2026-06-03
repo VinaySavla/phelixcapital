@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from 'framer-motion'
 
 const fadeUp = {
@@ -279,8 +281,6 @@ export default function PhelixCapitalHomepage() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#07080B] via-transparent to-transparent" />
             </motion.div>
           </div>
-
-          
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
