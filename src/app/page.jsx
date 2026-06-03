@@ -46,7 +46,7 @@ export default function PhelixCapitalHomepage() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <button className="px-6 py-3 rounded-2xl border border-[#C8A96B]/20 bg-white/[0.02] hover:bg-white/[0.05] transition duration-300 text-[15px]">
+            <button className="px-6 py-3 rounded-2xl border border-[#C8A96B]/20 bg-white/[0.02] hover:bg-white/[0.05] transition duration-300 text-[15px]" onClick={() => location.href = 'https://investor.phelixcap.in/investor/login'}>
               Log in / Sign up
             </button>
           </div>
