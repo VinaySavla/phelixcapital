@@ -20,18 +20,7 @@ export default function PhelixCapitalHomepage() {
       {/* NAVBAR */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl bg-[#07080B]/75 border-b border-[#C8A96B]/10 shadow-[0_10px_40px_rgba(0,0,0,0.35)]">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <div className="text-4xl leading-none text-[#C8A96B] font-serif">P</div>
-
-            <div>
-              <div className="text-[26px] tracking-[0.38em] uppercase font-light text-white">
-                Phelix
-              </div>
-              <div className="text-[11px] tracking-[0.55em] uppercase text-[#C8A96B] mt-1">
-                Capital
-              </div>
-            </div>
-          </div>
+          <img src="/phelixcapitallogodark.png" alt="Phelix Capital Logo" className="h-14 w-auto" />
 
           <nav className="hidden lg:flex items-center gap-14 text-[15px] text-gray-300">
             <a href="#services" className="hover:text-[#F2E3BF] transition duration-300 tracking-wide">
@@ -142,15 +131,15 @@ export default function PhelixCapitalHomepage() {
               },
               {
                 title: 'Technology Platform',
-                text: 'Real-time portfolio monitoring and detailed reports — all in one place, accessible anytime.'
+                text: 'Real-time portfolio monitoring and detailed reports all in one place, accessible anytime.'
               },
               {
                 title: 'DIY Investing',
-                text: 'Curated baskets across equity, debt and commodities — for investors who prefer to go solo.'
+                text: 'Curated baskets across equity, debt and commodities for investors who prefer to go solo.'
               },
               {
                 title: 'Fully Regulated',
-                text: 'AMFI registered. Your investments are 100% safe, held directly with trusted AMCs — not with us.'
+                text: 'AMFI registered. Your investments are 100% safe, held directly with trusted AMCs not with us.'
               }
             ].map((item, index) => (
               <motion.div
@@ -257,7 +246,7 @@ export default function PhelixCapitalHomepage() {
               <p className="text-[#C8A96B] mb-4">How It Works</p>
 
               <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
-                From first conversation to invested — in days.
+                From first conversation to invested in days.
               </h2>
 
               <p className="text-gray-400 text-lg leading-relaxed">
@@ -369,7 +358,7 @@ export default function PhelixCapitalHomepage() {
             </p>
 
             <p className="text-gray-400 leading-relaxed mb-10 text-lg">
-              I believe successful investing is not about chasing noise or predictions — it is about staying patient, managing risk intelligently, and allowing compounding to work over time.
+              I believe successful investing is not about chasing noise or predictions - it is about staying patient, managing risk intelligently, and allowing compounding to work over time.
             </p>
           </motion.div>
         </div>
@@ -398,24 +387,40 @@ export default function PhelixCapitalHomepage() {
             </p>
 
             <p className="text-[18px] text-white mb-10">
-              Book a free 30 minute consultation — no fees, no pressure.
+              Book a free 30 minute consultation - no fees, no pressure.
             </p>
 
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-6 max-w-2xl mx-auto">
+            <form className="flex flex-col gap-4 w-full mb-6 max-w-2xl mx-auto">
               <input
                 type="text"
-                placeholder="Your phone or email"
-                className="w-full md:flex-1 px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300"
+                placeholder="Name"
+                className="w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300"
               />
+              <input
+                type="email"
+                placeholder="Email"
+                className="w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300"
+              />
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                className="w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300"
+              />
+              <textarea
+                placeholder="Message"
+                rows={4}
+                className="w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300 resize-none"
+              ></textarea>
 
               <motion.button
-                whileHover={{ scale: 1.03, y: -2 }}
+                type="submit"
+                whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-10 py-4 rounded-2xl bg-[#D8B36A] text-black text-[16px] font-medium hover:bg-[#E7C98A] transition duration-300 whitespace-nowrap"
+                className="w-full py-4 rounded-2xl bg-[#D8B36A] text-black text-[16px] font-medium hover:bg-[#E7C98A] transition duration-300 mt-2"
               >
-                Talk to us
+                Submit
               </motion.button>
-            </div>
+            </form>
 
             <p className="text-sm text-gray-500 mb-8">
               We’ll reach out within 24 hours.
