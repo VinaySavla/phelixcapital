@@ -18,6 +18,27 @@ const fadeUp = {
 export default function PhelixCapitalHomepage() {
   const [theme, setTheme] = useState('dark')
   const isDark = theme === 'dark'
+  const [isOpen, setIsOpen] = useState(false);
+
+  const themeToggleBtn = (
+    <button
+      type="button"
+      aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+      onClick={() => setTheme(isDark ? 'light' : 'dark')}
+      className={isDark ? 'p-3 rounded-2xl border border-[#C8A96B]/20 bg-white/[0.04] hover:bg-white/[0.08] transition duration-300 flex-shrink-0' : 'p-3 rounded-2xl border border-[#af8239]/30 bg-[#fffaf5] hover:bg-[#fff3e8] transition duration-300 flex-shrink-0'}
+    >
+      {isDark ? (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 text-[#F2E3BF]">
+          <path d="M12 3v2.5M12 18.5V21M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M3 12h2.5M18.5 12H21M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" strokeLinecap="round" />
+          <circle cx="12" cy="12" r="4" />
+        </svg>
+      ) : (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 text-[#061226]">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      )}
+    </button>
+  );
 
   useEffect(() => {
     const storedTheme = window.localStorage.getItem('phelix-theme')
@@ -39,45 +60,78 @@ export default function PhelixCapitalHomepage() {
     <div className={isDark ? 'min-h-screen bg-[#07080B] text-white font-sans' : 'min-h-screen bg-[#f7f8fb] text-[#061226] font-sans'}>
       {/* NAVBAR */}
       <header className={isDark ? 'fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl bg-[#07080B]/75 border-b border-[#C8A96B]/10 shadow-[0_10px_40px_rgba(0,0,0,0.35)]' : 'fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl bg-white/90 border-b border-[#af8239]/20 shadow-[0_10px_35px_rgba(6,18,38,0.08)]'}>
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-          <img src={isDark ? "/phelixcapitallogodark.png" : "/phelixcapitallogo.png"} alt="Phelix Capital Logo" className="h-14 w-auto" />
+      <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+        
+        {/* 1. Logo (Always visible) */}
+        <img src={isDark ? "/phelixcapitallogodark.png" : "/phelixcapitallogo.png"} alt="Phelix Capital Logo" className="h-14 w-auto relative z-50" />
 
-          <nav className={isDark ? 'hidden lg:flex items-center gap-14 text-[15px] text-gray-300' : 'hidden lg:flex items-center gap-14 text-[15px] text-[#061226]'}>
-            <a href="#services" className={isDark ? 'hover:text-[#F2E3BF] transition duration-300 tracking-wide' : 'hover:text-[#af8239] transition duration-300 tracking-wide'}>
+        {/* 2. Mobile Controls: Theme Toggle & Hamburger (Hidden on desktop) */}
+        <div className="flex lg:hidden items-center gap-3 relative z-[60]">
+          {themeToggleBtn}
+          
+          <button 
+            className="p-2 flex flex-col justify-center items-center gap-1.5 ml-1"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle Menu"
+          >
+            <span className={`w-6 h-0.5 block transition-all duration-300 ${isDark ? 'bg-gray-300' : 'bg-[#061226]'} ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+            <span className={`w-6 h-0.5 block transition-all duration-300 ${isDark ? 'bg-gray-300' : 'bg-[#061226]'} ${isOpen ? 'opacity-0' : ''}`}></span>
+            <span className={`w-6 h-0.5 block transition-all duration-300 ${isDark ? 'bg-gray-300' : 'bg-[#061226]'} ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+          </button>
+        </div>
+
+        {/* 3. Mobile Dark Overlay (Click to close) */}
+        {isOpen && (
+          <div 
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 lg:hidden transition-opacity"
+            onClick={() => setIsOpen(false)}
+          />
+        )}
+
+        {/* 4. Sidebar Wrapper (Mobile Menu & Desktop Nav/Buttons) */}
+        <div className={`
+          /* Mobile Classes: Fixed Sidebar */
+          fixed top-0 right-0 h-screen w-[280px] pt-32 px-8 flex flex-col gap-10 z-50
+          transform transition-transform duration-300 ease-in-out shadow-2xl
+          ${isDark ? 'bg-[#07080B] border-l border-[#C8A96B]/10' : 'bg-white border-l border-[#af8239]/20'}
+          ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+          
+          /* Desktop Classes: Transparent wrapper to preserve exact spacing */
+          lg:contents
+        `}>
+          
+          {/* Main Navigation Links */}
+          <nav className={isDark ? 'flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-14 text-[16px] lg:text-[15px] text-gray-300' : 'flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-14 text-[16px] lg:text-[15px] text-[#061226]'}>
+            <a href="#services" onClick={() => setIsOpen(false)} className={isDark ? 'hover:text-[#F2E3BF] transition duration-300 tracking-wide w-full border-b border-[#C8A96B]/10 pb-4 lg:border-0 lg:pb-0 lg:w-auto' : 'hover:text-[#af8239] transition duration-300 tracking-wide w-full border-b border-[#af8239]/10 pb-4 lg:border-0 lg:pb-0 lg:w-auto'}>
               Why Choose Us
             </a>
-            <a href="#about" className={isDark ? 'hover:text-[#F2E3BF] transition duration-300 tracking-wide' : 'hover:text-[#af8239] transition duration-300 tracking-wide'}>
+            <a href="#about" onClick={() => setIsOpen(false)} className={isDark ? 'hover:text-[#F2E3BF] transition duration-300 tracking-wide w-full border-b border-[#C8A96B]/10 pb-4 lg:border-0 lg:pb-0 lg:w-auto' : 'hover:text-[#af8239] transition duration-300 tracking-wide w-full border-b border-[#af8239]/10 pb-4 lg:border-0 lg:pb-0 lg:w-auto'}>
               About Us
             </a>
-            <a href="#contact" className={isDark ? 'hover:text-[#F2E3BF] transition duration-300 tracking-wide' : 'hover:text-[#af8239] transition duration-300 tracking-wide'}>
+            <a href="#contact" onClick={() => setIsOpen(false)} className={isDark ? 'hover:text-[#F2E3BF] transition duration-300 tracking-wide w-full border-b border-[#C8A96B]/10 pb-4 lg:border-0 lg:pb-0 lg:w-auto' : 'hover:text-[#af8239] transition duration-300 tracking-wide w-full border-b border-[#af8239]/10 pb-4 lg:border-0 lg:pb-0 lg:w-auto'}>
               Contact
             </a>
           </nav>
 
-          <div className="hidden md:flex items-center gap-4">
-            <button
-              type="button"
-              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-              onClick={() => setTheme(isDark ? 'light' : 'dark')}
-              className={isDark ? 'p-3 rounded-2xl border border-[#C8A96B]/20 bg-white/[0.04] hover:bg-white/[0.08] transition duration-300' : 'p-3 rounded-2xl border border-[#af8239]/30 bg-[#fffaf5] hover:bg-[#fff3e8] transition duration-300'}
+          {/* Actions: Theme Toggle (Desktop Only here) & Login (Mobile + Desktop) */}
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4 w-full lg:w-auto">
+            
+            {/* Desktop Theme Toggle (Hidden on mobile sidebar) */}
+            <div className="hidden lg:block">
+              {themeToggleBtn}
+            </div>
+
+            <button 
+              onClick={() => window.location.href = 'https://investor.phelixcap.in/investor/login'}
+              className={isDark ? 'w-full lg:w-auto px-6 py-3 rounded-2xl border border-[#C8A96B]/20 bg-white/[0.02] hover:bg-white/[0.05] transition duration-300 text-[15px]' : 'w-full lg:w-auto px-6 py-3 rounded-2xl border border-[#af8239]/30 bg-[#fffaf5] hover:bg-[#fff3e8] transition duration-300 text-[15px] text-[#061226]'} 
             >
-              {isDark ? (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 text-[#F2E3BF]">
-                  <path d="M12 3v2.5M12 18.5V21M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M3 12h2.5M18.5 12H21M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" strokeLinecap="round" />
-                  <circle cx="12" cy="12" r="4" />
-                </svg>
-              ) : (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 text-[#061226]">
-                  <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              )}
-            </button>
-            <button className={isDark ? 'px-6 py-3 rounded-2xl border border-[#C8A96B]/20 bg-white/[0.02] hover:bg-white/[0.05] transition duration-300 text-[15px]' : 'px-6 py-3 rounded-2xl border border-[#af8239]/30 bg-[#fffaf5] hover:bg-[#fff3e8] transition duration-300 text-[15px] text-[#061226]'} onClick={() => window.location.href = 'https://investor.phelixcap.in/investor/login'}>
               Log in / Sign up
             </button>
           </div>
+          
         </div>
-      </header>
+      </div>
+    </header>
 
       {/* HERO */}
       <section className={isDark ? 'relative min-h-[78vh] flex flex-col justify-center overflow-hidden bg-[#05070B] pt-28 border-b border-white/[0.03]' : 'relative min-h-[78vh] flex flex-col justify-center overflow-hidden bg-[#f5f7fb] pt-28 border-b border-[#af8239]/10'}>
