@@ -476,13 +476,14 @@ export default function PhelixCapitalHomepage() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative h-[500px] rounded-[40px] overflow-hidden border border-white/[0.08] shadow-[0_40px_100px_rgba(0,0,0,0.45)]"
+            className={isDark ? 'relative min-h-[500px] h-[min(65vw,640px)] rounded-[40px] overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.45)]' : 'relative min-h-[500px] h-[min(65vw,640px)] rounded-[40px] overflow-hidden shadow-[0_40px_100px_rgba(6,18,38,0.08)]'}
           >
             <img
               src="/founder.jpeg"
               alt="Shobhit Bhansali - Founder, Phelix Capital"
-              className="w-full h-full object-contain object-top"
+              className="w-full h-full object-cover object-top"
             />
+            <div className={isDark ? 'absolute inset-0 bg-gradient-to-b from-[#07080B]/10 to-[#07080B]/60' : 'absolute inset-0 bg-gradient-to-b from-[#f7f8fb]/10 to-[#f7f8fb]/40'} />
           </motion.div>
 
           <motion.div
