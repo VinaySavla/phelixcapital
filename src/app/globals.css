@@ -10,7 +10,7 @@
   }
 
   body {
-    @apply bg-[#061226] text-white antialiased;
+    @apply bg-[#f7f8fb] text-[#061226] antialiased;
   }
 }
 

@@ -48,7 +48,7 @@ export default function PhelixCapitalHomepage() {
       return
     }
 
-    document.documentElement.classList.add('dark')
+    document.documentElement.classList.remove('dark')
   }, [])
 
   useEffect(() => {
