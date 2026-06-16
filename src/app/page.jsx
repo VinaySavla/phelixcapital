@@ -16,7 +16,7 @@ const fadeUp = {
 }
 
 export default function PhelixCapitalHomepage() {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('light')
   const isDark = theme === 'dark'
   const [isOpen, setIsOpen] = useState(false);
 
@@ -121,12 +121,14 @@ export default function PhelixCapitalHomepage() {
               {themeToggleBtn}
             </div>
 
-            <button 
-              onClick={() => window.location.href = 'https://investor.phelixcap.in/investor/login'}
-              className={isDark ? 'w-full lg:w-auto px-6 py-3 rounded-2xl border border-[#C8A96B]/20 bg-white/[0.02] hover:bg-white/[0.05] transition duration-300 text-[15px]' : 'w-full lg:w-auto px-6 py-3 rounded-2xl border border-[#af8239]/30 bg-[#fffaf5] hover:bg-[#fff3e8] transition duration-300 text-[15px] text-[#061226]'} 
+            <a
+              href="https://investor.phelixcap.in/investor/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={isDark ? 'w-full lg:w-auto px-6 py-3 rounded-2xl border border-[#C8A96B]/20 bg-white/[0.02] hover:bg-white/[0.05] transition duration-300 text-[15px] text-center' : 'w-full lg:w-auto px-6 py-3 rounded-2xl border border-[#af8239]/30 bg-[#fffaf5] hover:bg-[#fff3e8] transition duration-300 text-[15px] text-[#061226] text-center'} 
             >
               Log in / Sign up
-            </button>
+            </a>
           </div>
           
         </div>
@@ -135,7 +137,7 @@ export default function PhelixCapitalHomepage() {
 
       {/* HERO */}
       <section className={isDark ? 'relative min-h-[78vh] flex flex-col justify-center overflow-hidden bg-[#05070B] pt-28 border-b border-white/[0.03]' : 'relative min-h-[78vh] flex flex-col justify-center overflow-hidden bg-[#f5f7fb] pt-28 border-b border-[#af8239]/10'}>
-        <div className="absolute inset-0 opacity-[0.18]">
+        <div className="absolute inset-0 opacity-[0.12]">
           <img
             src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=2000&auto=format&fit=crop"
             alt="Luxury finance background"
@@ -143,7 +145,61 @@ export default function PhelixCapitalHomepage() {
           />
         </div>
 
-        <div className={isDark ? 'absolute inset-0 bg-black/55' : 'absolute inset-0 bg-white/45'} />
+        <div className={isDark ? 'absolute inset-0 bg-black/50' : 'absolute inset-0 bg-white/40'} />
+
+        {isDark && (
+          <>
+            <div className="absolute top-[15%] left-[10%] w-[500px] h-[500px] rounded-full bg-[#D8B36A]/[0.07] blur-[120px] animate-pulse" style={{ animationDuration: '8s' }} />
+            <div className="absolute bottom-[10%] right-[5%] w-[400px] h-[400px] rounded-full bg-[#4A6FA5]/[0.08] blur-[100px] animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }} />
+            <div className="absolute top-[50%] left-[50%] w-[600px] h-[300px] rounded-full bg-[#8B5E3C]/[0.05] blur-[140px] animate-pulse" style={{ animationDuration: '12s', animationDelay: '4s' }} />
+          </>
+        )}
+
+        {!isDark && (
+          <>
+            <div className="absolute top-[15%] left-[10%] w-[500px] h-[500px] rounded-full bg-[#af8239]/[0.06] blur-[120px] animate-pulse" style={{ animationDuration: '8s' }} />
+            <div className="absolute bottom-[10%] right-[5%] w-[400px] h-[400px] rounded-full bg-[#4A6FA5]/[0.06] blur-[100px] animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }} />
+            <div className="absolute top-[50%] left-[50%] w-[600px] h-[300px] rounded-full bg-[#8B5E3C]/[0.04] blur-[140px] animate-pulse" style={{ animationDuration: '12s', animationDelay: '4s' }} />
+          </>
+        )}
+
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <motion.div
+            animate={{ y: [0, -30, 0], opacity: [0.15, 0.35, 0.15] }}
+            transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
+            className="absolute top-[20%] left-[15%] w-1 h-1 rounded-full bg-[#D8B36A]"
+          />
+          <motion.div
+            animate={{ y: [0, -40, 0], opacity: [0.1, 0.3, 0.1] }}
+            transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+            className="absolute top-[35%] right-[20%] w-1.5 h-1.5 rounded-full bg-[#D8B36A]"
+          />
+          <motion.div
+            animate={{ y: [0, -25, 0], opacity: [0.12, 0.28, 0.12] }}
+            transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut', delay: 2.5 }}
+            className="absolute top-[60%] left-[40%] w-1 h-1 rounded-full bg-[#C8A96B]"
+          />
+          <motion.div
+            animate={{ y: [0, -35, 0], opacity: [0.08, 0.22, 0.08] }}
+            transition={{ duration: 11, repeat: Infinity, ease: 'easeInOut', delay: 3.5 }}
+            className="absolute top-[25%] right-[35%] w-0.5 h-0.5 rounded-full bg-white"
+          />
+          <motion.div
+            animate={{ y: [0, -20, 0], x: [0, 10, 0], opacity: [0.1, 0.25, 0.1] }}
+            transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut', delay: 5 }}
+            className="absolute top-[70%] left-[60%] w-1 h-1 rounded-full bg-[#D8B36A]"
+          />
+          <motion.div
+            animate={{ y: [0, -45, 0], opacity: [0.06, 0.18, 0.06] }}
+            transition={{ duration: 13, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+            className="absolute top-[10%] left-[55%] w-0.5 h-0.5 rounded-full bg-white"
+          />
+          <motion.div
+            animate={{ y: [0, -28, 0], x: [0, -8, 0], opacity: [0.1, 0.2, 0.1] }}
+            transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut', delay: 7 }}
+            className="absolute top-[45%] left-[10%] w-1 h-1 rounded-full bg-[#C8A96B]"
+          />
+        </div>
 
         <motion.div
           initial="hidden"
@@ -167,20 +223,21 @@ export default function PhelixCapitalHomepage() {
             research driven mutual fund solutions.
           </p>
 
-          <motion.button
+          <motion.a
+            href="#contact"
             whileHover={{ scale: 1.04, y: -2 }}
             whileTap={{ scale: 0.98 }}
-            className={isDark ? 'px-10 py-4 rounded-2xl bg-[#D8B36A] text-black text-[16px] font-medium tracking-wide hover:bg-[#E7C98A] transition duration-300 font-[\'Inter\'] shadow-[0_12px_40px_rgba(216,179,106,0.22)]' : 'px-10 py-4 rounded-2xl bg-[#af8239] text-white text-[16px] font-medium tracking-wide hover:bg-[#9a6d2b] transition duration-300 font-[\'Inter\'] shadow-[0_12px_35px_rgba(175,130,57,0.25)]'}
+            className={isDark ? 'inline-block px-10 py-4 rounded-2xl bg-[#D8B36A] text-black text-[16px] font-medium tracking-wide hover:bg-[#E7C98A] transition duration-300 font-[\'Inter\'] shadow-[0_12px_40px_rgba(216,179,106,0.22)]' : 'inline-block px-10 py-4 rounded-2xl bg-[#af8239] text-white text-[16px] font-medium tracking-wide hover:bg-[#9a6d2b] transition duration-300 font-[\'Inter\'] shadow-[0_12px_35px_rgba(175,130,57,0.25)]'}
           >
             Book Free Consultation
-          </motion.button>
+          </motion.a>
         </motion.div>
       </section>
 
       {/* WHY CHOOSE US */}
-      <section id="services" className={isDark ? 'py-32 px-6 bg-white/[0.02] relative overflow-hidden' : 'py-32 px-6 bg-white relative overflow-hidden'}>
+      <section id="services" className={isDark ? 'py-20 px-6 bg-white/[0.02] relative overflow-hidden' : 'py-20 px-6 bg-white relative overflow-hidden'}>
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-16 items-center mb-20">
+          <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-center mb-14">
             <motion.div
               initial={{ opacity: 0, scale: 0.96 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -256,9 +313,9 @@ export default function PhelixCapitalHomepage() {
       </section>
 
       {/* FRAMEWORK */}
-      <section id="framework" className="py-36 px-6 relative overflow-hidden">
+      <section id="framework" className="py-20 px-6 relative overflow-hidden">
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-[1fr_1fr] gap-16 items-center mb-20">
+          <div className="grid lg:grid-cols-[1fr_1fr] gap-12 items-center mb-14">
             <div>
               <p className={isDark ? 'text-[#C8A96B] mb-4' : 'text-[#af8239] mb-4'}>The Phelix Framework</p>
               <h2 className={isDark ? 'text-4xl md:text-5xl font-semibold leading-tight mb-6 text-white' : 'text-4xl md:text-5xl font-semibold leading-tight mb-6 text-[#061226]'}>
@@ -330,9 +387,9 @@ export default function PhelixCapitalHomepage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section id="how-it-works" className={isDark ? 'py-36 px-6 bg-white/[0.02] relative overflow-hidden' : 'py-36 px-6 bg-white relative overflow-hidden'}>
+      <section id="how-it-works" className={isDark ? 'py-20 px-6 bg-white/[0.02] relative overflow-hidden' : 'py-20 px-6 bg-white relative overflow-hidden'}>
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-[1fr_0.9fr] gap-16 items-center mb-20">
+          <div className="grid lg:grid-cols-[1fr_0.9fr] gap-12 items-center mb-14">
             <div>
               <p className={isDark ? 'text-[#C8A96B] mb-4' : 'text-[#af8239] mb-4'}>How It Works</p>
 
@@ -412,8 +469,8 @@ export default function PhelixCapitalHomepage() {
       </section>
 
       {/* ABOUT US */}
-      <section id="about" className={isDark ? 'py-36 px-6 bg-white/[0.02] relative overflow-hidden' : 'py-36 px-6 bg-white relative overflow-hidden'}>
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1fr_1fr] gap-16 items-center relative z-10">
+      <section id="about" className={isDark ? 'py-20 px-6 bg-white/[0.02] relative overflow-hidden' : 'py-20 px-6 bg-white relative overflow-hidden'}>
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1fr_1fr] gap-12 items-center relative z-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -422,9 +479,9 @@ export default function PhelixCapitalHomepage() {
             className="relative h-[500px] rounded-[40px] overflow-hidden border border-white/[0.08] shadow-[0_40px_100px_rgba(0,0,0,0.45)]"
           >
             <img
-              src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=1800&auto=format&fit=crop"
-              alt="Professional wealth management office"
-              className="w-full h-full object-cover"
+              src="/founder.jpeg"
+              alt="Shobhit Bhansali - Founder, Phelix Capital"
+              className="w-full h-full object-contain object-top"
             />
           </motion.div>
 
@@ -456,7 +513,7 @@ export default function PhelixCapitalHomepage() {
       </section>
 
       {/* CLOSING CTA */}
-      <section id="contact" className="px-6 pb-28 pt-8">
+      <section id="contact" className="px-6 pb-16 pt-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
