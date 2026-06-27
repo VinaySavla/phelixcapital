@@ -57,7 +57,7 @@ export default function PhelixCapitalHomepage() {
   }, [theme])
 
   return (
-    <div className={isDark ? 'min-h-screen bg-[#07080B] text-white font-sans' : 'min-h-screen bg-[#f7f8fb] text-[#061226] font-sans'}>
+    <div className={isDark ? 'min-h-screen bg-[#07080B] text-white font-sans' : 'min-h-screen bg-[#FAF6F1] text-[#061226] font-sans'}>
       {/* NAVBAR */}
       <header className={isDark ? 'fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl bg-[#07080B]/75 border-b border-[#C8A96B]/10 shadow-[0_10px_40px_rgba(0,0,0,0.35)]' : 'fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl bg-white/90 border-b border-[#af8239]/20 shadow-[0_10px_35px_rgba(6,18,38,0.08)]'}>
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
@@ -136,16 +136,16 @@ export default function PhelixCapitalHomepage() {
     </header>
 
       {/* HERO */}
-      <section className={isDark ? 'relative min-h-[78vh] flex flex-col justify-center overflow-hidden bg-[#05070B] pt-28 border-b border-white/[0.03]' : 'relative min-h-[78vh] flex flex-col justify-center overflow-hidden bg-[#f5f7fb] pt-28 border-b border-[#af8239]/10'}>
-        <div className="absolute inset-0 opacity-[0.12]">
+      <section className={isDark ? 'relative min-h-[850px] flex flex-col justify-center overflow-hidden bg-[#05070B] pt-28 border-b border-white/[0.03] font-[\'DM_Sans\']' : 'relative min-h-[850px] flex flex-col justify-center overflow-hidden bg-[#F6F1E9] pt-28 border-b border-[#af8239]/10 font-[\'DM_Sans\']'}>
+        <div className={isDark ? 'absolute inset-0 opacity-20' : 'absolute inset-0'}>
           <img
-            src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=2000&auto=format&fit=crop"
-            alt="Luxury finance background"
-            className="w-full h-full object-cover object-center"
+            src="/herobg.jpeg"
+            alt=""
+            className="w-full h-full object-cover object-[35%_center] md:object-center"
           />
         </div>
 
-        <div className={isDark ? 'absolute inset-0 bg-black/50' : 'absolute inset-0 bg-white/40'} />
+        <div className={isDark ? 'absolute inset-0 bg-black/70' : 'absolute inset-0 bg-gradient-to-r from-[#F8F4ED]/15 via-transparent to-transparent'} />
 
         {isDark && (
           <>
@@ -205,37 +205,71 @@ export default function PhelixCapitalHomepage() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="max-w-6xl mx-auto px-6 relative z-10 text-center"
+          className="w-full max-w-7xl mx-auto px-6 lg:px-8 relative z-10"
         >
-          <h1 className="text-[46px] md:text-[72px] font-[500] leading-[1] tracking-[-0.045em] mb-8 font-sans">
-            <span className={isDark ? 'text-white' : 'text-[#061226]'}>Smart Investing,</span>
-            <br />
-            <span className={isDark ? 'text-[#D8B36A] font-medium' : 'text-[#af8239] font-medium'}>
-              Sustainable Wealth
-            </span>
-          </h1>
+          <div className="max-w-[780px]">
+            <h1 className="text-[52px] sm:text-[68px] lg:text-[82px] font-normal leading-[0.98] tracking-[-0.035em] mb-8 font-['DM_Serif_Display']">
+              <span className={isDark ? 'text-white' : 'text-[#09223D]'}>Smart investing,</span>
+              <br />
+              <span className={isDark ? 'text-[#D8B36A] italic' : 'text-[#AF761E] italic'}>
+                Sustainable wealth
+              </span>
+            </h1>
 
-          <div className="w-16 h-px bg-white/15 mx-auto mb-8" />
+            <div className={isDark ? 'w-20 h-px bg-[#D8B36A] mb-7' : 'w-20 h-[2px] bg-[#AF761E] mb-7'} />
 
-          <p className={isDark ? 'text-[21px] md:text-[26px] text-gray-200 leading-relaxed max-w-3xl mx-auto mb-12 font-normal tracking-[0.01em] font-[\'Inter\']' : 'text-[21px] md:text-[26px] text-[#334155] leading-relaxed max-w-3xl mx-auto mb-12 font-normal tracking-[0.01em] font-[\'Inter\']'}>
-            Empowering investors through transparent,
-            <br />
-            research driven mutual fund solutions.
-          </p>
+            <p className={isDark ? 'text-[18px] md:text-[21px] text-gray-200 leading-[1.7] max-w-xl mb-7 font-normal' : 'text-[18px] md:text-[21px] text-[#334155] leading-[1.7] max-w-xl mb-7 font-normal'}>
+              Empowering investors through transparent,
+              <br />
+              research driven mutual fund solutions.
+            </p>
 
-          <motion.a
-            href="#contact"
-            whileHover={{ scale: 1.04, y: -2 }}
-            whileTap={{ scale: 0.98 }}
-            className={isDark ? 'inline-block px-10 py-4 rounded-2xl bg-[#D8B36A] text-black text-[16px] font-medium tracking-wide hover:bg-[#E7C98A] transition duration-300 font-[\'Inter\'] shadow-[0_12px_40px_rgba(216,179,106,0.22)]' : 'inline-block px-10 py-4 rounded-2xl bg-[#af8239] text-white text-[16px] font-medium tracking-wide hover:bg-[#9a6d2b] transition duration-300 font-[\'Inter\'] shadow-[0_12px_35px_rgba(175,130,57,0.25)]'}
-          >
-            Book Free Consultation
-          </motion.a>
+            <motion.a
+              href="#contact"
+              whileHover={{ scale: 1.04, y: -2 }}
+              whileTap={{ scale: 0.98 }}
+              className={isDark ? 'inline-flex items-center gap-4 px-8 py-4 rounded-lg bg-[#D8B36A] text-black text-[16px] font-medium tracking-wide hover:bg-[#E7C98A] transition duration-300 shadow-[0_12px_40px_rgba(216,179,106,0.22)]' : 'inline-flex items-center gap-4 px-8 py-4 rounded-lg bg-[#B47A22] text-white text-[16px] font-medium tracking-wide hover:bg-[#966319] transition duration-300 shadow-[0_12px_35px_rgba(175,130,57,0.25)]'}
+            >
+              Book Free Consultation <span aria-hidden="true" className="text-xl">→</span>
+            </motion.a>
+          </div>
+
+          <div className={isDark ? 'mt-14 pt-7 border-t border-white/10 grid sm:grid-cols-3 max-w-[850px]' : 'mt-14 pt-7 border-t border-[#09223D]/10 grid sm:grid-cols-3 max-w-[850px]'}>
+            {[
+              {
+                title: 'Clarity',
+                text: 'Transparent advice you can understand and trust.',
+                icon: <path d="M12 3 4.5 6v5.5c0 4.7 3.2 8.1 7.5 9.5 4.3-1.4 7.5-4.8 7.5-9.5V6L12 3Zm-3 9 2 2 4.5-5" />
+              },
+              {
+                title: 'Discipline',
+                text: 'Process-driven suggestions without emotional noise.',
+                icon: <><circle cx="12" cy="12" r="7" /><circle cx="12" cy="12" r="3" /><path d="m14 10 5-5m0 0v4m0-4h-4" /></>
+              },
+              {
+                title: 'Growth',
+                text: 'Compounding wealth with patience and perspective.',
+                icon: <><path d="M5 19v-5h4v5m2 0V9h4v10m2 0V5h3v14M4 19h17" /><path d="m5 10 5-3 4 1 6-5" /></>
+              }
+            ].map((item) => (
+              <div key={item.title} className={isDark ? 'flex gap-4 py-4 sm:px-6 first:pl-0 sm:border-r sm:last:border-r-0 border-white/10' : 'flex gap-4 py-4 sm:px-6 first:pl-0 sm:border-r sm:last:border-r-0 border-[#09223D]/10'}>
+                <div className={isDark ? 'w-14 h-14 shrink-0 rounded-full bg-white/5 flex items-center justify-center text-[#D8B36A]' : 'w-14 h-14 shrink-0 rounded-full bg-white/80 shadow-sm flex items-center justify-center text-[#A66D18]'}>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
+                    {item.icon}
+                  </svg>
+                </div>
+                <div>
+                  <h2 className={isDark ? 'font-[\'DM_Serif_Display\'] text-[25px] text-white leading-tight mb-1' : 'font-[\'DM_Serif_Display\'] text-[25px] text-[#09223D] leading-tight mb-1'}>{item.title}</h2>
+                  <p className={isDark ? 'text-sm leading-relaxed text-gray-400' : 'text-sm leading-relaxed text-[#475569]'}>{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </motion.div>
       </section>
 
       {/* WHY CHOOSE US */}
-      <section id="services" className={isDark ? 'py-20 px-6 bg-white/[0.02] relative overflow-hidden' : 'py-20 px-6 bg-white relative overflow-hidden'}>
+      <section id="services" className={isDark ? 'py-20 px-6 bg-white/[0.02] relative overflow-hidden' : 'py-20 px-6 bg-[#FAF6F1] relative overflow-hidden'}>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-center mb-14">
             <motion.div
@@ -387,7 +421,7 @@ export default function PhelixCapitalHomepage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section id="how-it-works" className={isDark ? 'py-20 px-6 bg-white/[0.02] relative overflow-hidden' : 'py-20 px-6 bg-white relative overflow-hidden'}>
+      <section id="how-it-works" className={isDark ? 'py-20 px-6 bg-white/[0.02] relative overflow-hidden' : 'py-20 px-6 bg-[#FAF6F1] relative overflow-hidden'}>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-[1fr_0.9fr] gap-12 items-center mb-14">
             <div>
@@ -469,7 +503,7 @@ export default function PhelixCapitalHomepage() {
       </section>
 
       {/* ABOUT US */}
-      <section id="about" className={isDark ? 'py-20 px-6 bg-white/[0.02] relative overflow-hidden' : 'py-20 px-6 bg-white relative overflow-hidden'}>
+      <section id="about" className={isDark ? 'py-20 px-6 bg-white/[0.02] relative overflow-hidden' : 'py-20 px-6 bg-[#FAF6F1] relative overflow-hidden'}>
         <div className="max-w-7xl mx-auto grid lg:grid-cols-[1fr_1fr] gap-12 items-center relative z-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
@@ -582,21 +616,38 @@ export default function PhelixCapitalHomepage() {
         </motion.div>
       </section>
 
-      {/* FOOTER */}
-      <footer className={isDark ? 'border-t border-white/[0.04] px-6 py-14 bg-[#06070A]' : 'border-t border-[#af8239]/10 px-6 py-14 bg-white'}>
-        <div className={isDark ? 'max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-500' : 'max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-[#475569]'}>
-          <div>© 2026 Phelix Capital. All rights reserved.</div>
+      {/* FOOTER RIBBON */}
+      <footer className={isDark ? 'px-4 sm:px-6 pt-5 bg-[#07080B]' : 'px-4 sm:px-6 pt-5 bg-[#FAF6F1]'}>
+        <div className="bg-[#09223D] text-[#F8F3E9] rounded-t-[36px] px-6 sm:px-10 lg:px-16 pt-14 pb-8">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-20">
+            <div>
+              <img src="/phelixcapitallogodark.png" alt="Phelix Capital" className="h-16 w-auto mb-8" />
+              <p className="text-[15px] text-[#E6DCC8] leading-relaxed mb-5">
+                Phelix Capital is a brand name used by Shobhit Bhansali
+              </p>
+              <p className="text-[13px] text-[#B9C2CA] leading-relaxed max-w-xl">
+                AMFI Registration Name: Shobhit Bhansali | ARN 358543 | Valid through 09 April 2029
+              </p>
+            </div>
 
-          <div className="flex items-center gap-6">
-            <a href="#" className={isDark ? 'hover:text-white transition duration-300' : 'hover:text-[#af8239] transition duration-300'}>
-              Privacy Policy
-            </a>
-            <a href="#" className={isDark ? 'hover:text-white transition duration-300' : 'hover:text-[#af8239] transition duration-300'}>
-              Terms
-            </a>
-            <a href="#" className={isDark ? 'hover:text-white transition duration-300' : 'hover:text-[#af8239] transition duration-300'}>
-              Disclosures
-            </a>
+            <div>
+              <nav aria-label="Footer navigation" className="grid grid-cols-2 gap-x-8 gap-y-4 text-[15px]">
+                <a href="#about" className="hover:text-[#D8B36A] transition-colors">About Us</a>
+                <a href="#services" className="hover:text-[#D8B36A] transition-colors">Why Choose Us</a>
+                <a href="#contact" className="hover:text-[#D8B36A] transition-colors">Contact Us</a>
+                <a href="/privacy-policy" className="hover:text-[#D8B36A] transition-colors">Privacy Policy</a>
+                <a href="/terms-and-conditions" className="hover:text-[#D8B36A] transition-colors">Terms and Conditions</a>
+                <a href="/commission-disclosure" className="hover:text-[#D8B36A] transition-colors">Commission Disclosure</a>
+              </nav>
+
+              <p className="mt-9 pt-7 border-t border-white/15 text-[13px] leading-relaxed text-[#D8DEE3]">
+                Mutual Fund investments are subject to market risks. Please read all scheme-related documents carefully before investing.
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-white/10 text-xs text-[#8F9DA8]">
+            © 2026 Phelix Capital. All rights reserved.
           </div>
         </div>
       </footer>

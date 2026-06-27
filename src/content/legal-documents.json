@@ -1,0 +1,1968 @@
+{
+    "privacy-policy":  {
+                           "slug":  "privacy-policy",
+                           "title":  "PRIVACY POLICY",
+                           "blocks":  [
+                                          {
+                                              "type":  "heading",
+                                              "text":  "1. Introduction"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Phelix Capital (“Phelix Capital”, “we”, “us”, or “our”) is a trade name and brand used by Shobhit Bhansali, an AMFI Registered Mutual Fund Distributor."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "AMFI Registration Number (ARN): 358543\nARN Holder: Shobhit Bhansali\nARN Validity: 09 April 2029"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "We respect your privacy and are committed to protecting the confidentiality and security of your personal information. This Privacy Policy describes how we collect, use, process, store, disclose, and safeguard information obtained through our website, digital platforms, communication channels, and services."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "By accessing this website or submitting your information, you acknowledge that you have read, understood, and agreed to the terms of this Privacy Policy."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "2. Scope of this Policy"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "This Privacy Policy applies to:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Visitors to the Phelix Capital website;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Prospective investors and clients;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Existing clients;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Individuals submitting enquiries or requests through our website;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Users interacting with us through email, phone, WhatsApp, social media, online forms, or other communication channels."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "For the purpose of this Privacy Policy, the terms “Client”, “User”, “You”, and “Your” refer to any person or entity accessing the website or availing services through Phelix Capital."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "3. Information We Collect"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "We may collect personal information and supporting documents necessary for providing services and complying with applicable regulations."
+                                          },
+                                          {
+                                              "type":  "subheading",
+                                              "text":  "Personal Information"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Full name"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Mobile number"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Email address"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Date of birth"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "PAN details"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Residential or correspondence address"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Bank account details"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Occupation and financial information"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Investment objectives and risk profile information"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Communication preferences"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Information submitted through forms, enquiries, or correspondence"
+                                          },
+                                          {
+                                              "type":  "subheading",
+                                              "text":  "KYC and Verification Documents"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Where required, we may collect:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "PAN Card"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Passport"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Driving Licence"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Voter ID"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Aadhaar (only where voluntarily provided and legally permissible)"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Photograph"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Signature"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Address proof"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Other documents required under applicable KYC, AML, or regulatory guidelines"
+                                          },
+                                          {
+                                              "type":  "subheading",
+                                              "text":  "Website Usage Information"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "We may automatically collect:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "IP address"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Device information"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Browser type and version"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Operating system"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Referral source"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Pages visited"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Date and time of visit"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Website interaction data"
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "4. Purpose of Collection"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Your information may be collected and used for:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Investor onboarding"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "KYC verification"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Mutual fund transaction facilitation"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Compliance with SEBI, AMFI, KRA, RTA, and other regulatory requirements"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Servicing and administration of investments"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Responding to enquiries and support requests"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Communication regarding transactions and service updates"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Risk profiling and suitability assessment where applicable"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Fraud prevention and identity verification"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Prevention of money laundering and financial crimes"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Internal record keeping"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Audit and compliance purposes"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Improving website functionality and user experience"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Protecting our legal rights and interests"
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "5. Lawful Basis of Processing"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "We process personal information based on one or more of the following grounds:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Your consent;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Performance of a contractual relationship;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Compliance with legal and regulatory obligations;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Legitimate business interests;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Prevention and detection of fraud, money laundering, and other unlawful activities;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Protection of our legal rights;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Compliance with judicial, regulatory, or governmental directions."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "6. Aadhaar Information"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Providing Aadhaar information is voluntary unless otherwise permitted or required by applicable law."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Where Aadhaar is collected:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "It will be used only for legally permissible identification and verification purposes."
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "It will not be used for any unrelated purpose."
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Alternative KYC documents may be accepted where permitted under applicable regulations."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "7. Communication Consent"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "By submitting your information through our website or communication channels, you consent to receiving communications from Phelix Capital through:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Email"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Telephone calls"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "SMS"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "WhatsApp"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Other electronic communication channels"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Such communications may relate to:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Service requests"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Mutual fund transactions"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Regulatory updates"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Account-related information"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Client servicing requirements"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Investor education and relevant service-related information"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "You may opt out of non-essential communications at any time, subject to regulatory requirements."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "8. Cookies and Tracking Technologies"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Our website may use cookies and similar technologies to:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Improve website functionality;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Enhance user experience;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Store user preferences;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Understand website usage patterns;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Improve performance and security."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "You may disable cookies through your browser settings. However, certain features of the website may not function properly if cookies are disabled."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "9. Analytics"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "We may use analytics services such as Google Analytics or similar tools to understand website traffic and user behavior."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "These services may collect information regarding:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Website visits;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Device characteristics;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Browsing behavior;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "User interactions with website content."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Such information is generally aggregated and does not personally identify individual users."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "10. Sharing and Disclosure of Information"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "We do not sell, rent, or trade personal information."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Your information may be shared only where necessary with:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Asset Management Companies (AMCs)"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Registrar and Transfer Agents (RTAs)"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "KYC Registration Agencies (KRAs)"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Payment service providers"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Technology platform providers"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "CRM and communication service providers"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Compliance and audit service providers"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Regulators and statutory authorities"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Courts, tribunals, law enforcement agencies, and government authorities"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "All disclosures shall be limited to the extent necessary for providing services or complying with legal and regulatory obligations."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "11. Third-Party Service Providers"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "We may engage third-party vendors, technology providers, APIs, and service partners for:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Website operations"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Client onboarding"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "KYC verification"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Mutual fund transaction processing"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Data storage"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Communication services"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Compliance and reporting"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Such service providers are where applicable contractually obligated to maintain appropriate confidentiality and security standards."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "12. Fraud Prevention and Regulatory Compliance"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "We may process and disclose information where necessary to:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Verify identity;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Detect and prevent fraud;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Prevent money laundering and financial crime;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Investigate suspicious activities;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Comply with applicable laws and regulations;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Protect investors and clients;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Safeguard our systems and services."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "13. Data Security"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "We maintain reasonable administrative, technical, and physical safeguards designed to protect personal information from unauthorized access, misuse, loss, disclosure, alteration, or destruction."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Security measures may include:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "SSL/HTTPS encryption;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Access controls;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Password-protected systems;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Secure hosting infrastructure;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Periodic security reviews."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "While we take reasonable precautions, no method of transmission or storage can be guaranteed to be completely secure."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "14. Password and Account Security"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Where client login facilities are provided, users are responsible for maintaining the confidentiality of their login credentials."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "You should:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Keep passwords secure;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Avoid sharing credentials;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Notify us immediately if unauthorized access is suspected."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "15. Data Storage and Retention"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Information may be stored on servers located in India or through authorized service providers located in other jurisdictions, subject to applicable legal and contractual safeguards."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "We retain information for as long as necessary:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "To provide services;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "To comply with legal and regulatory obligations;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "To satisfy audit and record-keeping requirements;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "To resolve disputes and enforce agreements."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Certain records may continue to be retained after termination of the relationship where required under applicable law."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "16. Your Rights"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Subject to applicable laws and regulatory requirements, you may request:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Access to your personal information;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Correction of inaccurate information;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Updating of information;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Withdrawal of consent where legally permissible;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Restriction of certain processing activities;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Deletion of personal information, subject to mandatory retention requirements."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Requests may be submitted through the contact details provided below."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "17. Account Deletion Requests"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "You may request deletion of your personal information by contacting us via email."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Please note that certain information may continue to be retained where required under:"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "SEBI regulations;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "AMFI guidelines;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Prevention of Money Laundering laws;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Tax laws;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Audit requirements;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "KYC obligations;"
+                                          },
+                                          {
+                                              "type":  "listItem",
+                                              "text":  "Other applicable statutory requirements."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "18. Children’s Privacy"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Our services are intended for individuals who are legally competent to enter into contracts under applicable laws."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "We do not knowingly collect personal information from minors without appropriate authorization from a parent or legal guardian."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "19. Third-Party Websites"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Our website may contain links to third-party websites."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "We are not responsible for the privacy practices, content, or security of such external websites. Users should review the privacy policies of those websites independently."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "20. Changes to this Privacy Policy"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "We reserve the right to modify this Privacy Policy at any time."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Any changes will be posted on this page together with the updated effective date."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Continued use of the website following any modifications shall constitute acceptance of the revised Privacy Policy."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "21. Contact Information"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "For questions, concerns, correction requests, account deletion requests, or privacy-related matters, please contact us at info@phelixcap.in."
+                                          },
+                                          {
+                                              "type":  "heading",
+                                              "text":  "Regulatory Disclaimer"
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Phelix Capital is a trade name used by Shobhit Bhansali. ARN 358543 is registered in the name of Shobhit Bhansali."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Shobhit Bhansali acts as a Mutual Fund Distributor and facilitates investments in mutual fund schemes offered by various Asset Management Companies."
+                                          },
+                                          {
+                                              "type":  "paragraph",
+                                              "text":  "Mutual Fund investments are subject to market risks. Please read all scheme-related documents carefully before investing."
+                                          }
+                                      ]
+                       },
+    "terms-and-conditions":  {
+                                 "slug":  "terms-and-conditions",
+                                 "title":  "TERMS, CONDITIONS, DISCLAIMER \u0026 GRIEVANCE REDRESSAL",
+                                 "blocks":  [
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "1. Acceptance of Terms"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Welcome to Phelix Capital."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "By accessing, browsing, or using this website (“Website”), you acknowledge that you have read, understood, and agree to be bound by these Terms, Conditions, Disclaimer \u0026 Grievance Redressal Policy (“Terms”), our Privacy Policy, Commission Disclosure, and any other policies published on this Website from time to time."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "If you do not agree with these Terms, please discontinue use of this Website immediately."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Your continued use of this Website shall constitute acceptance of any amendments made to these Terms."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "2. About Phelix Capital"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Phelix Capital is a trade name used by Shobhit Bhansali."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "AMFI Registered Mutual Fund Distributor\nARN: 358543\nARN Validity: 09 April 2029"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Shobhit Bhansali (under the brand name Phelix Capital) facilitates investments in mutual fund schemes offered by various Asset Management Companies (“AMCs”) and may provide investor education, product information, market commentary, investment-related content, and mutual fund distribution-related services."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Shobhit Bhansali acts solely as a Mutual Fund Distributor and does not provide investment advisory services, portfolio management services, or research analyst services unless separately licensed and authorized under applicable regulations."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Phelix Capital may from time to time introduce additional products, services, tools, calculators, educational content, technology integrations, investor engagement initiatives, or digital services. Such offerings shall remain subject to these Terms unless expressly stated otherwise."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "3. Eligibility"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "By using this Website, you represent and warrant that:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "You are legally competent to enter into binding agreements under applicable laws;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "All information provided by you is true, accurate, complete, and current;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "You shall comply with all applicable laws and regulations;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "You are not prohibited by any applicable law from using the Website or services."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "4. Nature of Information Provided"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "The information available on this Website is intended solely for:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Investor education;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "General information;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Mutual fund awareness;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Product information;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Distribution-related services."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "The content available on this Website does not constitute:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Investment advice;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Financial planning advice;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Tax advice;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Legal advice;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Accounting advice;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Research reports;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Research recommendations;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Portfolio management services;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Personalized financial advice."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Users should consult their own financial, legal, tax, and other professional advisors before making any investment decisions."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "5. No Investment Advice"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Any content made available through this Website, including but not limited to:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Articles;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Blogs;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Newsletters;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Educational material;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Calculators;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Goal planning tools;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Illustrations;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Portfolio examples;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Fund comparisons;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Featured funds;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Market commentary;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Investment concepts;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Investment baskets;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Performance data;"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "is provided solely for educational and informational purposes."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Nothing contained herein shall be construed as a recommendation to buy, sell, hold, switch, redeem, or invest in any security, mutual fund scheme, financial product, or investment strategy."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Any investment decision remains solely the responsibility of the investor."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "6. Mutual Fund Investments and Risk Disclosure"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Mutual fund investments are subject to market risks."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Investors should carefully read:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Scheme Information Documents (SID);"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Key Information Memorandums (KIM);"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Scheme Related Documents;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Addendum;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Risk disclosures;"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "before investing."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "The Net Asset Value (NAV) of mutual fund units may fluctuate based on:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Market movements;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Interest rates;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Credit events;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Liquidity conditions;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Economic developments;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Regulatory changes;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Other market factors."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Past performance does not guarantee future performance."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "No assurance can be given that any scheme’s investment objective will be achieved."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Investors may lose part or all of their invested capital."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Phelix Capital does not provide any guarantee or assurance of returns."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Phelix Capital does not guarantee the performance of any mutual fund scheme, investment strategy, market view, model portfolio, illustrative example, or investment outcome discussed on the Website."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "7. Online Transactions and Platform Services"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Where transaction facilities are offered through authorized technology partners, exchanges, RTAs, KRAs, AMCs, payment gateways, banks, or other service providers:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Orders shall be processed subject to applicable KYC, AML, operational, regulatory, and banking requirements."
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Transaction requests may be delayed, rejected, modified, or cancelled by AMCs, RTAs, banks, payment gateways, exchanges, or regulatory authorities."
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Applicable NAV shall be determined strictly in accordance with SEBI regulations and the relevant Scheme Related Documents."
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Redemption proceeds shall be credited directly by the AMC or its authorized service provider to the investor’s registered bank account."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Phelix Capital acts only as a facilitator and shall not be responsible for delayed, rejected, modified, incorrectly processed, or unexecuted transactions caused by third parties."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "8. Accuracy of Information"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "While reasonable efforts are made to maintain accurate and updated information on this Website, Phelix Capital makes no representations or warranties regarding:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Accuracy;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Completeness;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Reliability;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Timeliness;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Availability;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Suitability;"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "of any information available on this Website."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Information may be modified, updated, corrected, suspended, or removed without prior notice."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Any reliance placed upon information available on this Website shall be entirely at the user’s own risk."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Certain NAVs, market data, performance information, analytics, charts, reports, or other data displayed on the Website may be obtained from third-party sources. While reasonable care is taken in sourcing such information, Phelix Capital does not independently verify all third-party information and shall not be responsible for inaccuracies, delays, omissions, or interruptions in such data."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "9. Third-Party Websites and Links"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "This Website may contain links to third-party websites, applications, tools, or services."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Phelix Capital:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Does not control such third-party platforms;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Does not guarantee their accuracy;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Does not endorse their content;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Is not responsible for their privacy practices;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Is not liable for their products, services, or content."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Users access such third-party websites entirely at their own risk."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "10. User Responsibilities"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Users agree to:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Provide accurate information;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Maintain updated information;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Review all transaction confirmations and communications;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Maintain confidentiality of login credentials;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Conduct independent due diligence before investing;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Comply with all applicable laws and regulations."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Users remain solely responsible for all investment decisions and transactions."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "11. Communication Consent"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "By submitting your details through this Website, you consent to receive communications from Phelix Capital through:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Email;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Telephone;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "SMS;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "WhatsApp;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Other electronic communication channels."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Such communications may relate to:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Service requests;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Transaction updates;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Regulatory disclosures;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Investor education;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Product-related information;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Account servicing."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "This consent shall apply notwithstanding any registration under DND or similar services, to the extent permitted under applicable laws."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "12. Intellectual Property"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "All content available on this Website, including:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Logos;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Branding;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Graphics;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Designs;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Layouts;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Articles;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Educational content;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Publications;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Software;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Technology;"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "are owned by or licensed to Phelix Capital and are protected under applicable intellectual property laws."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "No content may be reproduced, copied, distributed, modified, republished, transmitted, stored, or commercially exploited without prior written permission."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "13. Account Security"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Where login facilities are provided, users shall be responsible for maintaining the confidentiality of:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Login credentials;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Passwords;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "OTPs;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Authentication information."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "All actions performed using a user’s credentials shall be deemed authorized by that user."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Phelix Capital shall not be liable for losses arising from unauthorized access to user credentials."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "14. Website Disclaimer"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "The information, content, educational material, articles, blogs, calculators, illustrations, market commentary, investment-related content, and other materials available on this Website are provided solely for general information and investor education purposes."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Nothing contained on this Website shall be construed as:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Investment advice;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Investment recommendation;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Financial planning advice;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Research report;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Research recommendation;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Tax advice;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Legal advice;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Portfolio management advice; or"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Solicitation to buy or sell any security or financial product."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Any views, opinions, market commentary, educational illustrations, examples, projections, or forward-looking statements displayed on this Website are based on information believed to be reliable at the time of publication. However, Phelix Capital does not warrant the accuracy, completeness, or timeliness of such information."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Investors are encouraged to independently evaluate investment opportunities and seek professional advice from qualified financial, tax, and legal advisors before making investment decisions."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Past performance, historical returns, model portfolios, illustrations, case studies, market examples, sector analysis, fund performance data, or investment strategies are not indicative of future performance."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "15. Limitation of Liability"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "To the fullest extent permitted by law, Phelix Capital, Shobhit Bhansali, affiliates, employees, representatives, agents, technology partners, and service providers shall not be liable for:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Investment losses;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Loss of profits;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Loss of business opportunities;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Data loss;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Service interruptions;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Website downtime;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Delayed transactions;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Failed transactions;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Errors in information;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Indirect, incidental, special, punitive, or consequential damages."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Use of this Website and reliance upon any information available on this Website is entirely at the user’s own risk."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "16. Indemnity"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "You agree to indemnify and hold harmless Phelix Capital, Shobhit Bhansali, affiliates, employees, representatives, service providers, and partners from and against any claims, liabilities, losses, damages, costs, penalties, or expenses arising out of:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Your use of the Website;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Breach of these Terms;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Violation of applicable laws;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Fraudulent activity;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Misrepresentation of information;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Unauthorized use of services."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "17. Suspension or Termination"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Phelix Capital reserves the right to suspend, restrict, or terminate access to the Website or services where:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Required by law;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Required by regulators;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Fraud is suspected;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Information provided is inaccurate;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Security concerns arise;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Continued access may create legal, regulatory, or operational risks."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "18. Force Majeure"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Phelix Capital shall not be liable for delays, interruptions, or failures arising from events beyond its reasonable control including:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Natural disasters;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Floods;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Earthquakes;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Fires;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Pandemics;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Government actions;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Regulatory actions;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Internet outages;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "System failures;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Cyber attacks;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Power failures;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Wars;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Terrorist activities;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Civil disturbances."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "19. Regulatory Compliance"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Information may be disclosed where required by:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "SEBI;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "AMFI;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Asset Management Companies;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Registrar \u0026 Transfer Agents;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "KYC Registration Agencies;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Courts;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Government authorities;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Law enforcement agencies;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Applicable laws and regulations."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "20. Grievance Redressal"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Phelix Capital is committed to providing prompt, transparent, and fair service to all investors."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "If you have any complaint, concern, feedback, query, or grievance relating to:"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Mutual fund transactions;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Investor onboarding;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Service quality;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Website functionality;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Communication received from us;"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Privacy-related concerns; or"
+                                                },
+                                                {
+                                                    "type":  "listItem",
+                                                    "text":  "Any other matter relating to our services,"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "you may contact us at info@phelixcap.in"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "We will make reasonable efforts to acknowledge and address investor communications in a timely manner."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Where a grievance relates to a transaction processed by an AMC, RTA, KRA, bank, or another service provider, Phelix Capital may assist the investor in coordinating with the relevant institution for resolution. However, final resolution may remain subject to the policies and timelines of the respective institution."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Nothing contained herein shall restrict an investor’s right to approach the relevant AMC, RTA, AMFI, SEBI, or any other competent authority or forum available under applicable laws."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "21. Changes to Terms"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Phelix Capital reserves the right to modify these Terms at any time."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Updated versions shall become effective immediately upon publication on the Website."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Continued use of the Website shall constitute acceptance of the revised Terms."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "22. Severability"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "If any provision of these Terms is held invalid, unlawful, or unenforceable, the remaining provisions shall continue in full force and effect."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "23. Governing Law and Jurisdiction"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "These Terms shall be governed by and construed in accordance with the laws of India."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Any dispute arising out of or relating to these Terms shall first be attempted to be resolved amicably."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Failing such resolution, the dispute shall be subject to the exclusive jurisdiction of the courts located in Mumbai, Maharashtra, India."
+                                                },
+                                                {
+                                                    "type":  "heading",
+                                                    "text":  "24. Regulatory Disclaimer"
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Phelix Capital is a trade name used by Shobhit Bhansali."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "ARN 358543 is registered in the name of Shobhit Bhansali."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Shobhit Bhansali (under the brand name Phelix Capital) acts solely as a Mutual Fund Distributor and facilitates investments in mutual fund schemes offered by various Asset Management Companies."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Phelix Capital does not provide investment advisory services unless separately licensed and authorized under applicable regulations."
+                                                },
+                                                {
+                                                    "type":  "paragraph",
+                                                    "text":  "Mutual Fund investments are subject to market risks. Please read all scheme-related documents carefully before investing."
+                                                }
+                                            ]
+                             },
+    "commission-disclosure":  {
+                                  "slug":  "commission-disclosure",
+                                  "title":  "Commission / Remuneration Disclosure",
+                                  "blocks":  [
+                                                 {
+                                                     "type":  "heading",
+                                                     "text":  "About Phelix Capital"
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "Phelix Capital is a trade name used by Shobhit Bhansali."
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "AMFI Registered Mutual Fund Distributor\nARN: 358543\nValidity: 09 April 2029"
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "Shobhit Bhansali (under the brand name Phelix Capital) facilitates investments in mutual fund schemes offered by various Asset Management Companies (\"AMCs\")."
+                                                 },
+                                                 {
+                                                     "type":  "heading",
+                                                     "text":  "How We Are Compensated"
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "Shobhit Bhansali or Phelix Capital receives commissions and/or trail commissions from Asset Management Companies for distributing mutual fund schemes."
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "Such commissions are paid by the respective AMCs and are generally built into the total expense ratio (TER) of the mutual fund scheme in accordance with applicable regulations."
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "Investors do not pay any separate distribution fee directly to Shobhit Bhansali or Phelix Capital unless specifically disclosed otherwise."
+                                                 },
+                                                 {
+                                                     "type":  "heading",
+                                                     "text":  "Nature of Commissions"
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "Compensation received by Shobhit Bhansali or Phelix Capital may include:"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Upfront commissions (if permitted under applicable regulations);"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Trail commissions;"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Incentives, reimbursements, or support programs offered by AMCs in accordance with applicable laws and regulations."
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "The amount of commission may vary across:"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Asset Management Companies;"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Mutual fund categories;"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Individual schemes;"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Investment products."
+                                                 },
+                                                 {
+                                                     "type":  "heading",
+                                                     "text":  "Conflict of Interest Disclosure"
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "Because Shobhit Bhansali or Phelix Capital receives commissions from AMCs, a potential conflict of interest may exist."
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "Shobhit Bhansali and Phelix Capital endeavour to recommend mutual fund schemes based on factors including:"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Investor suitability;"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Investment objectives;"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Risk profile;"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Investment horizon;"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Portfolio diversification considerations;"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "and not on the basis of commissions received."
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "However, investors should be aware that commissions may vary between schemes and AMCs."
+                                                 },
+                                                 {
+                                                     "type":  "heading",
+                                                     "text":  "No Additional Cost to Investors"
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "Commission payments received by Shobhit Bhansali or Phelix Capital are made by the respective Asset Management Companies and do not result in any separate fee being charged directly to investors unless specifically agreed and disclosed."
+                                                 },
+                                                 {
+                                                     "type":  "heading",
+                                                     "text":  "Investor Choice"
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "Investors are free to:"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Invest through Shobhit Bhansali;"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Invest through another distributor;"
+                                                 },
+                                                 {
+                                                     "type":  "listItem",
+                                                     "text":  "Invest directly with the Asset Management Company under the Direct Plan option where available."
+                                                 },
+                                                 {
+                                                     "type":  "paragraph",
+                                                     "text":  "Investors should evaluate the services offered and choose the investment route most suitable to their requirements."
+                                                 }
+                                             ]
+                              }
+}
