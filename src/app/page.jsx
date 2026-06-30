@@ -23,6 +23,7 @@ export default function PhelixCapitalHomepage() {
   const themeToggleBtn = (
     <button
       type="button"
+      hidden
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
       onClick={() => setTheme(isDark ? 'light' : 'dark')}
       className={isDark ? 'p-3 rounded-2xl border border-[#C8A96B]/20 bg-white/[0.04] hover:bg-white/[0.08] transition duration-300 flex-shrink-0' : 'p-3 rounded-2xl border border-[#af8239]/30 bg-[#fffaf5] hover:bg-[#fff3e8] transition duration-300 flex-shrink-0'}
@@ -63,7 +64,7 @@ export default function PhelixCapitalHomepage() {
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
         
         {/* 1. Logo (Always visible) */}
-        <img src={isDark ? "/phelixcapitallogodark.png" : "/phelixcapitallogo.png"} alt="Phelix Capital Logo" className="h-14 w-auto relative z-50" />
+        <a href='/'><img src={isDark ? "/phelixcapitallogodark.png" : "/phelixcapitallogo.png"} alt="Phelix Capital Logo" className="h-14 w-auto relative z-50" /></a>
 
         {/* 2. Mobile Controls: Theme Toggle & Hamburger (Hidden on desktop) */}
         <div className="flex lg:hidden items-center gap-3 relative z-[60]">
@@ -610,7 +611,7 @@ export default function PhelixCapitalHomepage() {
             </p>
 
             <div className={isDark ? 'pt-8 border-t border-white/[0.06] text-sm text-gray-500 leading-relaxed max-w-2xl mx-auto' : 'pt-8 border-t border-[#af8239]/15 text-sm text-[#475569] leading-relaxed max-w-2xl mx-auto'}>
-              Phelix Capital is a trade name used by Shobhit Bhansali.<br />AMFI-registered Mutual Fund Distributor | ARN: 358543 | Valid through 09 April 2029
+              AMFI-registered Mutual Fund Distributor | ARN: 358543 | Valid through 09 April 2029
             </div>
           </div>
         </motion.div>
@@ -633,10 +634,10 @@ export default function PhelixCapitalHomepage() {
             <div>
               <nav aria-label="Footer navigation" className="grid grid-cols-2 gap-x-8 gap-y-4 text-[15px]">
                 <a href="#about" className="hover:text-[#D8B36A] transition-colors">About Us</a>
-                <a href="#services" className="hover:text-[#D8B36A] transition-colors">Why Choose Us</a>
+                <a href="/terms-and-conditions" className="hover:text-[#D8B36A] transition-colors">Terms and Conditions</a>
                 <a href="#contact" className="hover:text-[#D8B36A] transition-colors">Contact Us</a>
                 <a href="/privacy-policy" className="hover:text-[#D8B36A] transition-colors">Privacy Policy</a>
-                <a href="/terms-and-conditions" className="hover:text-[#D8B36A] transition-colors">Terms and Conditions</a>
+                <a href="#services" className="hover:text-[#D8B36A] transition-colors">Why Choose Us</a>
                 <a href="/commission-disclosure" className="hover:text-[#D8B36A] transition-colors">Commission Disclosure</a>
               </nav>
 
