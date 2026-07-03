@@ -36,16 +36,24 @@ export default function PhelixCapitalHomepage() {
     const trimmedPhone = formData.phone.trim()
     const trimmedMessage = formData.message.trim()
 
-    if (trimmedName.length < 2 || trimmedName.length > 50) {
-      nextErrors.name = 'Name must be between 2 and 50 characters.'
+    if (!trimmedName) {
+      nextErrors.name = 'Name is required.'
     }
 
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
+    if (!trimmedMessage) {
+      nextErrors.message = 'Message is required.'
+    }
+
+    if (!trimmedEmail) {
+      nextErrors.email = 'Email is required.'
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
       nextErrors.email = 'Enter a valid email address.'
     }
 
-    if (!/^\d{10}$/.test(trimmedPhone)) {
-      nextErrors.phone = 'Mobile number must be exactly 10 digits.'
+    if (!trimmedPhone) {
+      nextErrors.phone = 'Phone number is required.'
+    } else if (!/^\d{10}$/.test(trimmedPhone)) {
+      nextErrors.phone = 'Phone number must be exactly 10 digits.'
     }
 
     return nextErrors
@@ -665,10 +673,6 @@ export default function PhelixCapitalHomepage() {
                   onChange={handleChange}
                   placeholder="Name"
                   required
-                  minLength={2}
-                  maxLength={50}
-                  pattern="[A-Za-z][A-Za-z\\s'.-]{1,49}"
-                  title="Use 2 to 50 letters and common name characters only."
                   aria-invalid={Boolean(formErrors.name)}
                   className={isDark ? 'w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300' : 'w-full px-6 py-4 rounded-2xl bg-[#f8fafc] border border-[#af8239]/20 text-[#061226] placeholder:text-[#64748b] outline-none focus:border-[#af8239]/50 transition duration-300'}
                 />
@@ -682,7 +686,6 @@ export default function PhelixCapitalHomepage() {
                   onChange={handleChange}
                   placeholder="Email"
                   required
-                  maxLength={254}
                   aria-invalid={Boolean(formErrors.email)}
                   className={isDark ? 'w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300' : 'w-full px-6 py-4 rounded-2xl bg-[#f8fafc] border border-[#af8239]/20 text-[#061226] placeholder:text-[#64748b] outline-none focus:border-[#af8239]/50 transition duration-300'}
                 />
@@ -697,9 +700,8 @@ export default function PhelixCapitalHomepage() {
                   placeholder="Phone Number"
                   required
                   maxLength={10}
-                  pattern="\d{10}"
                   inputMode="numeric"
-                  title="Use exactly 10 digits."
+                  pattern="\d{10}"
                   aria-invalid={Boolean(formErrors.phone)}
                   className={isDark ? 'w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300' : 'w-full px-6 py-4 rounded-2xl bg-[#f8fafc] border border-[#af8239]/20 text-[#061226] placeholder:text-[#64748b] outline-none focus:border-[#af8239]/50 transition duration-300'}
                 />
@@ -713,8 +715,10 @@ export default function PhelixCapitalHomepage() {
                   placeholder="Message"
                   rows={4}
                   required
+                  aria-invalid={Boolean(formErrors.message)}
                   className={isDark ? 'w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300 resize-none' : 'w-full px-6 py-4 rounded-2xl bg-[#f8fafc] border border-[#af8239]/20 text-[#061226] placeholder:text-[#64748b] outline-none focus:border-[#af8239]/50 transition duration-300 resize-none'}
                 ></textarea>
+                {formErrors.message && <p className="mt-2 text-left text-sm text-red-400">{formErrors.message}</p>}
               </div>
 
               <motion.button
