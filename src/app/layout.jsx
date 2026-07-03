@@ -65,6 +65,14 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="canonical" href="https://phelixcap.in" />
       </head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-QBW07SEV1Z"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-QBW07SEV1Z');
+      </script>
       <body>{children}</body>
     </html>
   )
