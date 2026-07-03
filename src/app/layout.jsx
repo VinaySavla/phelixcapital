@@ -77,7 +77,10 @@ export default function RootLayout({ children }) {
 
           gtag('config', 'G-QBW07SEV1Z');`}
       </script>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
