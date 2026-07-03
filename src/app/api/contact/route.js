@@ -63,7 +63,7 @@ export async function POST(request) {
 
     await transporter.sendMail({
       from: `Phelix Capital <${gmailUser}>`,
-      to: 'shobit@phelixcap.in',
+      to: 'shobhit@phelixcap.in
       replyTo: email,
       subject: `New contact form submission from ${name}`,
       text: [
