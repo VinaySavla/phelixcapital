@@ -9,14 +9,6 @@ function escapeHtml(value) {
     .replace(/'/g, '&#39;')
 }
 
-function isValidEmail(email) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
-}
-
-function isValidPhone(phone) {
-  return /^\d{10}$/.test(phone)
-}
-
 export async function POST(request) {
   try {
     const body = await request.json()
@@ -25,20 +17,24 @@ export async function POST(request) {
     const phone = typeof body.phone === 'string' ? body.phone.trim() : ''
     const message = typeof body.message === 'string' ? body.message.trim() : ''
 
-    if (!name || !email || !phone || !message) {
-      return Response.json({ error: 'All fields are required.' }, { status: 400 })
+    if (!name || !message) {
+      return Response.json({ error: 'Name and message are required.' }, { status: 400 })
     }
 
-    if (name.length < 2 || name.length > 50) {
-      return Response.json({ error: 'Name must be between 2 and 50 characters.' }, { status: 400 })
+    if (!email) {
+      return Response.json({ error: 'Email is required.' }, { status: 400 })
     }
 
-    if (!isValidEmail(email)) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       return Response.json({ error: 'Enter a valid email address.' }, { status: 400 })
     }
 
-    if (!isValidPhone(phone)) {
-      return Response.json({ error: 'Enter a valid phone number.' }, { status: 400 })
+    if (!phone) {
+      return Response.json({ error: 'Phone number is required.' }, { status: 400 })
+    }
+
+    if (!/^\d{10}$/.test(phone)) {
+      return Response.json({ error: 'Phone number must be exactly 10 digits.' }, { status: 400 })
     }
 
     const gmailUser = process.env.GMAIL_USER
@@ -64,7 +60,7 @@ export async function POST(request) {
     await transporter.sendMail({
       from: `Phelix Capital <${gmailUser}>`,
       to: 'shobhit@phelixcap.in',
-      replyTo: email,
+      replyTo: email || undefined,
       subject: `New contact form submission from ${name}`,
       text: [
         `Name: ${name}`,
