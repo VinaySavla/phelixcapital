@@ -19,6 +19,37 @@ export default function PhelixCapitalHomepage() {
   const [theme, setTheme] = useState('light')
   const isDark = theme === 'dark'
   const [isOpen, setIsOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  })
+  const [formErrors, setFormErrors] = useState({})
+  const [formStatus, setFormStatus] = useState({ type: '', message: '' })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const validateForm = () => {
+    const nextErrors = {}
+    const trimmedName = formData.name.trim()
+    const trimmedEmail = formData.email.trim()
+    const trimmedPhone = formData.phone.trim()
+    const trimmedMessage = formData.message.trim()
+
+    if (trimmedName.length < 2 || trimmedName.length > 50) {
+      nextErrors.name = 'Name must be between 2 and 50 characters.'
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
+      nextErrors.email = 'Enter a valid email address.'
+    }
+
+    if (!/^\d{10}$/.test(trimmedPhone)) {
+      nextErrors.phone = 'Mobile number must be exactly 10 digits.'
+    }
+
+    return nextErrors
+  }
 
   const themeToggleBtn = (
     <button
@@ -56,6 +87,57 @@ export default function PhelixCapitalHomepage() {
     document.documentElement.classList.toggle('dark', theme === 'dark')
     window.localStorage.setItem('phelix-theme', theme)
   }, [theme])
+
+  const handleChange = (event) => {
+    const { name, value } = event.target
+    setFormData((current) => ({
+      ...current,
+      [name]: value
+    }))
+    setFormErrors((current) => ({
+      ...current,
+      [name]: ''
+    }))
+  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    setFormStatus({ type: '', message: '' })
+    const nextErrors = validateForm()
+    setFormErrors(nextErrors)
+
+    if (Object.keys(nextErrors).length > 0) {
+      return
+    }
+
+    setIsSubmitting(true)
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Unable to send your message right now.')
+      }
+
+      setFormStatus({ type: 'success', message: 'Thanks. Your message has been sent successfully.' })
+      setFormData({ name: '', email: '', phone: '', message: '' })
+    } catch (error) {
+      setFormStatus({
+        type: 'error',
+        message: error instanceof Error ? error.message : 'Something went wrong while sending your message.'
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   return (
     <div className={isDark ? 'min-h-screen bg-[#07080B] text-white font-sans' : 'min-h-screen bg-[#FAF6F1] text-[#061226] font-sans'}>
@@ -574,37 +656,83 @@ export default function PhelixCapitalHomepage() {
               Book a free 30 minute consultation - no fees, no pressure.
             </p>
 
-            <form className="flex flex-col gap-4 w-full mb-6 max-w-2xl mx-auto">
-              <input
-                type="text"
-                placeholder="Name"
-                className={isDark ? 'w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300' : 'w-full px-6 py-4 rounded-2xl bg-[#f8fafc] border border-[#af8239]/20 text-[#061226] placeholder:text-[#64748b] outline-none focus:border-[#af8239]/50 transition duration-300'}
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className={isDark ? 'w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300' : 'w-full px-6 py-4 rounded-2xl bg-[#f8fafc] border border-[#af8239]/20 text-[#061226] placeholder:text-[#64748b] outline-none focus:border-[#af8239]/50 transition duration-300'}
-              />
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                className={isDark ? 'w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300' : 'w-full px-6 py-4 rounded-2xl bg-[#f8fafc] border border-[#af8239]/20 text-[#061226] placeholder:text-[#64748b] outline-none focus:border-[#af8239]/50 transition duration-300'}
-              />
-              <textarea
-                placeholder="Message"
-                rows={4}
-                className={isDark ? 'w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300 resize-none' : 'w-full px-6 py-4 rounded-2xl bg-[#f8fafc] border border-[#af8239]/20 text-[#061226] placeholder:text-[#64748b] outline-none focus:border-[#af8239]/50 transition duration-300 resize-none'}
-              ></textarea>
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full mb-6 max-w-2xl mx-auto">
+              <div>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Name"
+                  required
+                  minLength={2}
+                  maxLength={50}
+                  pattern="[A-Za-z][A-Za-z\\s'.-]{1,49}"
+                  title="Use 2 to 50 letters and common name characters only."
+                  aria-invalid={Boolean(formErrors.name)}
+                  className={isDark ? 'w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300' : 'w-full px-6 py-4 rounded-2xl bg-[#f8fafc] border border-[#af8239]/20 text-[#061226] placeholder:text-[#64748b] outline-none focus:border-[#af8239]/50 transition duration-300'}
+                />
+                {formErrors.name && <p className="mt-2 text-left text-sm text-red-400">{formErrors.name}</p>}
+              </div>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Email"
+                  required
+                  maxLength={254}
+                  aria-invalid={Boolean(formErrors.email)}
+                  className={isDark ? 'w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300' : 'w-full px-6 py-4 rounded-2xl bg-[#f8fafc] border border-[#af8239]/20 text-[#061226] placeholder:text-[#64748b] outline-none focus:border-[#af8239]/50 transition duration-300'}
+                />
+                {formErrors.email && <p className="mt-2 text-left text-sm text-red-400">{formErrors.email}</p>}
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="Phone Number"
+                  required
+                  maxLength={10}
+                  pattern="\d{10}"
+                  inputMode="numeric"
+                  title="Use exactly 10 digits."
+                  aria-invalid={Boolean(formErrors.phone)}
+                  className={isDark ? 'w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300' : 'w-full px-6 py-4 rounded-2xl bg-[#f8fafc] border border-[#af8239]/20 text-[#061226] placeholder:text-[#64748b] outline-none focus:border-[#af8239]/50 transition duration-300'}
+                />
+                {formErrors.phone && <p className="mt-2 text-left text-sm text-red-400">{formErrors.phone}</p>}
+              </div>
+              <div>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Message"
+                  rows={4}
+                  required
+                  className={isDark ? 'w-full px-6 py-4 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-gray-500 outline-none focus:border-[#D8B36A]/40 transition duration-300 resize-none' : 'w-full px-6 py-4 rounded-2xl bg-[#f8fafc] border border-[#af8239]/20 text-[#061226] placeholder:text-[#64748b] outline-none focus:border-[#af8239]/50 transition duration-300 resize-none'}
+                ></textarea>
+              </div>
 
               <motion.button
                 type="submit"
+                disabled={isSubmitting}
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full py-4 rounded-2xl bg-[#D8B36A] text-black text-[16px] font-medium hover:bg-[#E7C98A] transition duration-300 mt-2"
+                className="w-full py-4 rounded-2xl bg-[#D8B36A] text-black text-[16px] font-medium hover:bg-[#E7C98A] transition duration-300 mt-2 disabled:cursor-not-allowed disabled:opacity-60"
               >
-                Submit
+                {isSubmitting ? 'Sending...' : 'Submit'}
               </motion.button>
             </form>
+
+            {formStatus.message && (
+              <p className={formStatus.type === 'success' ? 'text-sm text-emerald-400 mb-8' : 'text-sm text-red-400 mb-8'}>
+                {formStatus.message}
+              </p>
+            )}
 
             <p className={isDark ? 'text-sm text-gray-500 mb-8' : 'text-sm text-[#475569] mb-8'}>
               We’ll reach out within 24 hours.
