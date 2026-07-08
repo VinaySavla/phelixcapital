@@ -1,5 +1,6 @@
 import './globals.css'
-import { Analytics } from "@vercel/analytics/next"
+import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
   metadataBase: new URL('https://phelixcap.in'),
@@ -66,18 +67,21 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="canonical" href="https://phelixcap.in" />
       </head>
-      <script
-        src="https://www.googletagmanager.com/gtag/js?id=G-QBW07SEV1Z"
-        strategy="afterInteractive"
-      />
-      <script id="google-analytics" strategy="afterInteractive">
-        {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+      <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-QBW07SEV1Z"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-          gtag('config', 'G-QBW07SEV1Z');`}
-      </script>
-      <body>{children}</body>
+gtag('config', 'G-QBW07SEV1Z');`}
+        </Script>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
